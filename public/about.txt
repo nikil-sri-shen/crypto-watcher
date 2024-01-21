@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Commissioner
+- Font Author: Copyright 2019 The Commissioner Project Authors (github.com/kosbarts/Commissioner)
+- Font Source: http://fonts.gstatic.com/s/commissioner/v20/tDaH2o2WnlgI0FNDgduEk4jAhwgumbU1SVfU5BD8OuRL8OstC6KOhgvBYWSFJ-Mgdrgiju6fF8meZm0rk4eF-ZugTMNdGPe7Fu0jUdk.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
