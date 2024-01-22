@@ -33,7 +33,7 @@ function CryptoList() {
       <div className="m-4 text-black">
         <label
           htmlFor="currency"
-          className="mr-2 text-green-800 text-center text-3xl font-bold"
+          className="mr-2 text-white text-center text-3xl font-bold"
         >
           Select Currency
         </label>

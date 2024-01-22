@@ -10,7 +10,7 @@ function Navbar() {
     <div className="mt-1">
       <div className="p-3 fixed top-0 left-0 right-0 z-10 backdrop-blur-md bg-opacity-30">
         <ul className="flex">
-          <li className="ml-6 mr-4 glow-text text-3xl">
+          <li className="ml-4 mt-4 mr-2 glow-text text-3xl">
             <a href="/">
               <img
                 src="logo.png"
@@ -20,8 +20,9 @@ function Navbar() {
               ></img>
             </a>
           </li>
-          <li className="ml-2 mt-2 mr-4 glow-text text-3xl text-green-900 font-bold">
-            <p>CryptoWatcher</p>
+          <li className="ml-2 mt-2 mr-4 glow-text text-3xl text-green-900 font-bold ">
+            <p>Crypto-Watcher </p>
+            <p className="text-base text-white">Gaze at your Cryptos. . .</p>
           </li>
           <div class="flex ml-auto">
             <li class="mr-6 glow-text">
