@@ -96,7 +96,6 @@ const CryptoPrice = () => {
         {cryptoData ? (
           <input
             className="mx-auto border-green-900 border-2 sm:text-xl md:text-2xl lg:text-3xl text-white p-2 rounded-xl text-center"
-            size={27}
             disabled
             value={`${selectedCoin.toUpperCase()} : ${
               cryptoData[selectedCoin] &&
