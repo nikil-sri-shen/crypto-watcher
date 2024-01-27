@@ -1,5 +1,26 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { FaLongArrowAltUp, FaLongArrowAltDown } from "react-icons/fa";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 function CryptoList() {
   const [cryptoData, setCryptoData] = useState([]);
@@ -26,7 +47,7 @@ function CryptoList() {
   };
 
   return (
-    <div>
+    <motion.div variants={container} initial="hidden" animate="visible">
       <p className="sm:text-3xl md:text-4xl lg:text-5xl font-bold m-4">
         Market Price of Cryptocurrencies
       </p>
@@ -63,13 +84,19 @@ function CryptoList() {
           <option value="usd">USD (US Dollars)</option>
         </select>
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <motion.div
+        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
         {cryptoData.map((crypto) => (
-          <div
+          <motion.div
             key={crypto.id}
-            className={` p-4 bg-opacity-65 rounded-2xl shadow-2xl ${
+            className={`p-4 bg-opacity-65 rounded-2xl shadow-2xl ${
               crypto.price_change_24h < 0 ? "  bg-red-500" : " bg-green-500"
             }`}
+            variants={item}
           >
             <img
               src={crypto.image}
@@ -108,10 +135,10 @@ function CryptoList() {
             >
               ({crypto.price_change_percentage_24h.toFixed(2)}%)
             </p>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
