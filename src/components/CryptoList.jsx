@@ -51,7 +51,7 @@ function CryptoList() {
       <p className="sm:text-3xl md:text-4xl lg:text-5xl font-bold m-4">
         Market Price of Cryptocurrencies
       </p>
-      <div className="m-4 text-black flex">
+      <div className="m-4 text-black">
         <label
           htmlFor="currency"
           className="mr-2 text-white text-center text-3xl font-bold"
@@ -83,19 +83,6 @@ function CryptoList() {
           <option value="uah">UAH (Ukrainian Hryvnia)</option>
           <option value="usd">USD (US Dollars)</option>
         </select>
-        <p className="text-center text-white ml-auto">
-          powered by <br />
-          <span>
-            <a href="https://www.coingecko.com/" className="text-blue-800">
-              <img
-                src="CoinGeckoApi/PNG/White/[latest] coingecko_logo_with_text_biw_logo_with_dark_text copy.png"
-                alt="CoinGecko Logo"
-                height={100}
-                width={100}
-              />
-            </a>
-          </span>
-        </p>
       </div>
       <motion.div
         className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
