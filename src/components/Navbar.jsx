@@ -21,7 +21,7 @@ function Navbar() {
             </a>
           </li>
           <li className="ml-2 mt-2 mr-4 glow-text sm:text-lg md:text-2xl lg:text-3xl text-green-900 font-bold ">
-            <p>Crypto-Watcher </p>
+            <p>Crypto-Watchers</p>
             <p className="sm:text-xs md:text-sm lg:text-base text-white">
               Gaze at your Cryptos. . .
             </p>
