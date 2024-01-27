@@ -20,9 +20,11 @@ function Navbar() {
               ></img>
             </a>
           </li>
-          <li className="ml-2 mt-2 mr-4 glow-text text-3xl text-green-900 font-bold ">
+          <li className="ml-2 mt-2 mr-4 glow-text sm:text-lg md:text-2xl lg:text-3xl text-green-900 font-bold ">
             <p>Crypto-Watcher </p>
-            <p className="text-base text-white">Gaze at your Cryptos. . .</p>
+            <p className="sm:text-xs md:text-sm lg:text-base text-white">
+              Gaze at your Cryptos. . .
+            </p>
           </li>
           <div class="flex ml-auto">
             <li class="mr-6 glow-text">
