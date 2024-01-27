@@ -96,6 +96,22 @@ const CryptoDetails = () => {
             Select a cryptocurrency to view details.
           </p>
         )}
+        <br />
+        <div className="flex justify-center items-center">
+          <p className="text-center">
+            powered by{" "}
+            <span>
+              <a href="https://www.coingecko.com/" className="text-blue-800">
+                <img
+                  src="CoinGeckoApi/PNG/White/[latest] coingecko_logo_with_text_biw_logo_with_dark_text copy.png"
+                  alt="CoinGecko Logo"
+                  height={100}
+                  width={100}
+                />
+              </a>
+            </span>
+          </p>
+        </div>
       </div>
     </motion.div>
   );
